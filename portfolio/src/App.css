@@ -226,3 +226,7 @@ nav p:hover, nav a:hover{
   margin-top: 1%;
   font-size: 2rem;
 }
+
+#Dont_You_Dare_Open_This{
+  display: none;
+}
