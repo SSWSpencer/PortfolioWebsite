@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  background: #B5FFE1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bitter', serif;
+}
+h1{
+  font-size: 4.7rem;
+}
+
+p, a, span {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #35524A;
+  overflow-x: hidden;
+}
+
+nav p, nav a{
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 2rem;
+  text-decoration: none;
+  color: #B5FFE1;
+  font-family: 'Bitter', serif;
+}
+
+nav p:hover, nav a:hover{
+  color: #87F1FF;
+}
+
+.HomePage{
+  margin: 12% 10% 0 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HomeTextWrapper h2{
+  font-size: 4rem;
+  margin-top: 1%;
+  text-align: right;
+}
+
+.HomeIcons {
+  margin-top: 1%;
+  text-align: right;
+  font-size: 3rem;
+}
+
+.HomeIcons a{
+  color: black;
+}
+
+.HomePage img{
+  width: 25%;
+  border-radius: 20px;
+  border: 6px solid #35524A;
+}
+
+.AboutWrapper{
+  margin: 12% 10% 0 20%;
+}
+
+.AboutHeader{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.AboutBox{
+  width: 35%;
+  padding: 2%;
+  margin: 2%;
+  border: 2px solid #35524A;
+  border-radius: 20px;
+  background: white;
+}
+
+.AboutBox:hover{
+  background: #87F1FF;
+}
+.AboutBox:hover > h4{
+  font-weight: bold;
+}
+
+.AboutBox h4{
+  width: 100%;
+  font-size: 1.6rem;
+  padding-bottom: 1%;
+  border-bottom: 1px solid #35524A;
+}
+
+.AboutTopInfo, .AboutMidInfo, .AboutBotInfo{
+  display: flex;
+  justify-content: space-around;
+}
+
+.AboutBoxText{
+  margin-top: 3%;
+  line-height: 1.35rem;
+}
+.AboutBoxText p{
+  margin-bottom: 1%;
+}
+
+.AboutWork{
+  margin-top: 5%;
+  border: 2px solid #35524A;
+  border-radius: 20px;
+  background: white;
+  margin-bottom: 5%;
+}
+.AboutWorkHeader{
+  text-align: center;
+  border-bottom: 2px solid #35524A;
+  padding-bottom: 2%;
+}
+.AboutWorkHeader h4{
+  font-size: 1.6rem;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+.AboutWorkContent{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 4% auto 0 auto;
+  justify-content: space-evenly;
+}
+.AboutWorkContent a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.AboutWorkBox img{
+  width: 50%;
+}
+.AboutWorkBox{
+  border: 2px solid #35524A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  margin-bottom: 20%;
+  border-radius: 20px;
+  background: #B5FFE1;
+}
+.AboutWorkBox p{
+  margin-top: 3%;
+}
+.AboutWorkBox:hover{
+  background: #87F1FF;
+}
+.AboutWorkBox:hover > p{
+  font-weight: bold;
+}
