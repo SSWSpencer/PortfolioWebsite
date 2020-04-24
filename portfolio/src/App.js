@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import AboutMe from "./components/AboutMe";
+import MaintenancePage from "./components/MaintenancePage";
 
 function App() {
   return (
@@ -19,6 +20,12 @@ function App() {
         </Route>
         <Route exact path="/about">
           <AboutMe />
+        </Route>
+        <Route exact path="/resume">
+          <MaintenancePage />
+        </Route>
+        <Route exact path="/Contact">
+          <MaintenancePage />
         </Route>
       </div>
     </Router>

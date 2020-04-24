@@ -215,3 +215,14 @@ nav p:hover, nav a:hover{
 .AboutWorkBox:hover > p{
   font-weight: bold;
 }
+
+.MaintenancePageWrapper{
+  margin: 12% 10% 0 20%;
+}
+.MaintenancePageWrapper h1{
+  font-size: 5rem;
+}
+.MaintenancePageWrapper h2{
+  margin-top: 1%;
+  font-size: 2rem;
+}
