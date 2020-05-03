@@ -55,6 +55,14 @@ h1{
   font-size: 4.7rem;
 }
 
+h2{
+  font-size: 4rem;
+}
+
+h3{
+  font-size: 3.5rem;
+}
+
 p, a, span {
   font-family: 'Ubuntu', sans-serif;
 }
@@ -134,9 +142,6 @@ nav p:hover, nav a:hover{
   background: white;
 }
 
-.AboutBox:hover{
-  background: #87F1FF;
-}
 .AboutBox:hover > h4{
   font-weight: bold;
 }
@@ -226,6 +231,128 @@ nav p:hover, nav a:hover{
   margin-top: 1%;
   font-size: 2rem;
 }
+.ResumePageWrapper{
+  margin: 5% 6% 0 20%;
+  padding: 4% 4% 1% 4%;
+  font-family: "Ubuntu", sans-serif;
+  background: white;
+  border-radius: 20px;
+  border: 2px solid #35524A;
+}
+
+.ResumePageWrapper h1{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+.ResumePageWrapper h2{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 0.6%;
+}
+
+.ResumePageWrapper h6{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+
+.ResumeLinks a, .ResumeLinks span{
+  margin-left: 1%;
+  font-size: 1rem;
+}
+
+.ResumeLinks p{
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.ResumeLinks{
+  margin-top: 1.5%;
+}
+
+.ResumeSummary{
+  margin-top: 1.5%;
+}
+
+.ResumeSummary ul{
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+.ResumeExperience{
+  margin-top: 1.5%;
+}
+
+.ResumeExp{
+  display: flex;
+  align-items: center;
+}
+.ResumeExpText{
+  margin-left: 2%;
+}
+
+.ResumeEdu{
+  display: flex;
+  align-items: center;
+}
+.ResumeEduText{
+  margin-left: 2%;
+}
+
+.ResumePageWrapper img{
+  width: 5%;
+}
+
+.ResumeEducation{
+  margin-top: 1.5%;
+}
+
+.ResumeFooter p{
+  margin-top: 15%;
+  text-align: center;
+}
+.ResumeFooter span{
+  text-decoration: underline;
+}
+
+.ProjectWrapper{
+  margin: 5% 6% 0 20%;
+  padding: 4% 4% 1% 4%;
+  background: white;
+  border-radius: 20px;
+  border: 2px solid #35524A;
+}
+.ProjectTitle{
+  margin-bottom: 2%;
+}
+
+.ProjectPhoto img, .ProjectPhoto{
+  width: 75%;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+.ProjectPhoto a{
+  color: black;
+}
+
+.ProjectDesc{
+  margin-top: 3%;
+}
+
+.ProjectDesc p{
+  margin-bottom: 1%;
+}
+
+.ProjectDesc span{
+  font-weight: bold;
+}
+
 
 #Dont_You_Dare_Open_This{
   display: none;

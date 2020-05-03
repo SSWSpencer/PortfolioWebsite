@@ -3,7 +3,11 @@ import './App.css';
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import AboutMe from "./components/AboutMe";
+import Resume from "./components/Resume"
 import MaintenancePage from "./components/MaintenancePage";
+
+import NasaAPOD from "./components/Projects/NasaAPOD";
+import SaltyHackerNews from "./components/Projects/SaltyHackerNews"
 
 function App() {
   return (
@@ -22,10 +26,16 @@ function App() {
           <AboutMe />
         </Route>
         <Route exact path="/resume">
+          <Resume />
+        </Route>
+        <Route exact path="/contact">
           <MaintenancePage />
         </Route>
-        <Route exact path="/Contact">
-          <MaintenancePage />
+        <Route exact path="/nasa-apod">
+          <NasaAPOD />
+        </Route>
+        <Route exact path="/saltiest-hacker-news-troll">
+          <SaltyHackerNews />
         </Route>
       </div>
     </Router>

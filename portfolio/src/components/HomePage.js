@@ -16,7 +16,7 @@ const HomePage = () => {
                     <a href="mailto:steve35spencer@gmail.com?subject=Your Title&body=Your Message"><FaEnvelopeSquare /></a>
                 </div>
             </div>
-            <img src={SelfPortait} />
+            <img src={SelfPortait} alt="Steven Spencer" />
         </div>
     )
 }
