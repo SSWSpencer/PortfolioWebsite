@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <p id="Dont_You_Dare_Open_This">You thought you were being clever by inspecting my page, but you weren't clever enough to avoid losing the game.</p>
   </React.StrictMode>,
   document.getElementById('root')
 );

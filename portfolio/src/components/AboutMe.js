@@ -1,5 +1,7 @@
 import React from "react";
 import NasaProjectPic from "./Pictures/NasaProjectPic.png";
+import SaltProjectPic from "./Pictures/SaltProjectPic.png"
+import {Link} from "react-router-dom"
 
 const AboutMe = () => {
 
@@ -74,14 +76,14 @@ const AboutMe = () => {
                 </div>
 
                 <div className="AboutWorkContent"> {/*Note to future self, put example work in this div, wrapped in <div className="AboutWorkBox">    [CONTENT]    </div>*/}
-
-
-                    <a href="https://stevenspencer-nasa-apod.now.sh/"><div className="AboutWorkBox">
-                        <img src={NasaProjectPic} />
+                    <Link to="/nasa-apod"><div className="AboutWorkBox">
+                        <img src={NasaProjectPic} alt="Nasa's Daily Photo Website" />
                         <p>NASA's Photo of the Day</p>
-                    </div></a>
-
+                    </div></Link>
                     
+                    <Link to="/saltiest-hacker-news-troll"><div className="AboutWorkBox">
+                        <img src={SaltProjectPic} alt="Saltiest Hacker News Troll" />
+                        <p>Saltiest Hacker News Troll</p></div></Link>
 
 
                 </div>
