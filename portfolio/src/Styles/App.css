@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bitter', serif;
+}
+h1{
+  font-size: 5.5rem;
+}
+
+h2{
+  font-size: 3.5rem;
+}
+
+h3{
+  font-size: 2.5rem;
+}
+
+p, a, span {
+  font-family: 'Roboto', sans-serif;
+}
+
+@media(min-width: 2560px){
+  h1{
+    font-size: 7.3rem;
+  }
+  
+  h2{
+    font-size: 4.6rem;
+  }
+  
+  h3{
+    font-size: 3.3rem;
+  }
+}
+
+@media(min-width: 3840px){
+  h1{
+    font-size: 11rem;
+  }
+  
+  h2{
+    font-size: 7rem;
+  }
+  
+  h3{
+    font-size: 5rem;
+  }
+}
+
+@media(max-width: 1024px){
+  h1{
+    font-size: 4rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 2.5rem;
+  }
+}
+
+@media(max-width: 700px){
+  h1{
+    font-size: 2.5rem;
+  }
+  h2{
+    font-size: 2.2rem;
+  }
+  h3{
+    font-size: 1.8rem;
+  }
+}
+
+#Dont_You_Dare_Open_This{
+  display: none;
+}
+
+.fadeTranslate-enter {
+  opacity: 0;
+  transform: translate(0, -100vh);
+  position: fixed;
+}
+
+.fadeTranslate-enter.fadeTranslate-enter-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: opacity 1000ms ease-in, transform 1000ms ease-in-out;
+}
+
+.fadeTranslate-exit {
+  opacity: 1;
+  position: fixed;
+  transform: translate(0, 0);
+}
+
+.fadeTranslate-exit.fadeTranslate-exit-active {
+  opacity: 0;
+  transform: translate(0, -100vh);
+  transition: opacity 1000ms ease-in, transform 1000ms ease-in-out;
+}
+
+
+
+
+
+.fix-container {
+  width: 100%;
+}
