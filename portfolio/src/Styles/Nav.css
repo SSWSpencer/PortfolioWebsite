@@ -1,0 +1,193 @@
+.NavWrapper{
+    position: relative;
+    width: 100%;
+    height: 194px;
+    overflow: hidden;
+    background-image: url("../Images/Nav-Background.png");
+    z-index: 999;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.NavBanner{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+    font-weight: bold;   
+}
+
+.NavLinks{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+    font-weight: bold;   
+    width: 45%;
+}
+
+.NavLinks a{
+    color: white;
+    text-decoration: none;
+    margin: 0 2%;
+    transition: 1s;
+
+}
+.NavLinks .navSelection{
+    color: #03045E;
+}
+
+.NavLinks a:hover{
+    color: #03045E;
+}
+
+
+
+.NavBanner img{
+    width: 10%;
+    margin-right: 2%;
+}
+
+@media(min-width: 2560px){
+    .NavWrapper{
+        height: 260px;
+    }
+    .NavLinks{
+        font-size: 2rem;
+    }
+    .NavBanner{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+@media(min-width: 3840px){
+    .NavWrapper{
+        height: 388px;
+    }
+    .NavLinks{
+        font-size: 3rem;
+    }
+    .NavBanner{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 1536px){
+    .NavWrapper{
+        height: 154px;
+    }
+}
+
+@media(max-width: 1440px){
+    .NavWrapper{
+        height: 144px;
+    }
+}
+
+
+@media(max-width: 1366px){
+    .NavWrapper{
+        height: 138px;
+    }
+    .NavLinks{
+        width: 65%;
+        left: 40%;
+    }
+}
+
+@media(max-width: 1024px){
+    .NavWrapper{
+        display: flex;
+        height: 160px;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(to right, rgb(33, 128, 222), rgb(34,247,254));
+    }
+    .NavBanner{
+        top: 35%;
+        left: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+    .NavBanner img{
+        width: 12%;
+    }
+    .NavLinks{
+        width: 90%;
+        left: auto;
+        top: 80%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .NavWrapper{
+        overflow: visible;
+        height: 120px
+    }
+    @keyframes navFade{
+        from{opacity: 0;}
+        to{opacity: 1}
+    }
+    .NavBanner{
+        top: 50%;
+    }
+    .NavLinks{
+        flex-direction: column;
+        top: 200%;
+        width: 100%;
+        background-image: linear-gradient(to right, rgb(40, 154, 255), rgb(41,255,255));
+        animation-name: navFade;
+        animation-duration: 1s;
+    }
+    .NavLinks a{
+        padding: 2%;
+        border-bottom: 1px solid #03045E;
+        width: 100%;
+        text-align: center;
+    }
+    #mobileTopNav{
+        border-top: 1px solid #03045E;
+    }
+    #OpenNavButton{
+        position: relative;
+        top: 100%;
+        right: 50%;
+        transform: translateY(-100%) translateX(50%);
+        background: white;
+        border: 0;
+        padding: 2% 3%;
+        font-size: 1.5rem;
+        text-align: center;
+        color: rgb(40, 154, 255);
+
+    }
+}
+
+@media(max-width: 400px){
+    .NavBanner img{
+        width: 20%;
+    }
+}

@@ -1,0 +1,172 @@
+
+.HomePageTopBackground{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-image: url("../Images/Content-Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.HomePageTop{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: white;
+    letter-spacing: 0.05rem;
+    font-weight: bold;   
+}
+
+.HPTopText h1{
+    margin-bottom: 8%;
+    text-align: left;
+}
+
+.HPTopText{
+    text-align: center;
+}
+
+.HPTopText a{
+    border: 2px solid #1A75D8;
+    border-radius: 10px;
+    padding: 5%;
+    background: #01F6FE;
+    color: #03045E;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    transition: 1s;
+    
+}
+
+.HPTopText a:hover{
+    border: 2px solid #03045E;
+    background: #1A75D8
+}
+
+.HomePageTop img{
+    border-radius: 50%;
+    width: 35%;
+}
+
+.HomePageBoxWrapper1, .HomePageBoxWrapper2{
+    display: flex;
+    margin: 2% auto;
+    justify-content: space-evenly;
+    color: #1A75D8;
+    font-weight: bold;
+}
+
+.HomePageBoxWrapper2{
+    margin-top: 4%;
+}
+
+.HomePageBox{
+    width: 20%;
+    margin-top: 2%;
+    text-align: center;
+    transition: 1s;
+}
+
+.HomePageBox img{
+    width: 40%;
+    margin-bottom: 2%;
+}
+
+
+.Skills{
+    margin: 2% auto 2% auto;
+    text-align: center;
+}
+.TAHead{
+    margin-bottom: 0.5%;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+}
+.Skills p{
+    font-size: 1rem;
+    margin-bottom: 2%;
+    text-decoration: underline;
+}
+.Skills p:hover{
+    cursor: pointer;
+}
+
+.Hidden{
+    display: none;
+}
+
+.SkillList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media(min-width: 2560px){
+    .HomePageTopBackground{
+        height: 800px;
+    }
+    .HPTopText a{
+        font-size: 1.6rem;
+    }
+    .Skills p{
+        font-size: 1.3rem;
+    }
+}
+
+@media(min-width: 3840px){
+    .HomePageTopBackground{
+        height: 1200px;
+    }
+    .HPTopText a{
+        font-size: 2.4rem;
+    }
+    .Skills p{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 1024px){
+    .HomePageTopBackground{
+        position: relative;
+        height: 450px;
+        background-image: linear-gradient(to right, rgb(33, 128, 222), rgb(34,247,254));
+    }
+    .HomePageBox{
+        width: 30%;
+    }
+    .HomePageTop img{
+        width: 45%;
+    }
+}
+
+@media(max-width: 700px){
+    .HomePageTopBackground{
+        height: 300px;
+    }
+    .HomePageTop{
+        flex-direction: column-reverse;
+    }
+    .HomePageTop h1{
+        text-align: center;
+    }
+    .HomePageTop a{
+        font-size: 0.8rem;
+    }
+    .HomePageTop img{
+        width: 45%;
+    }
+    .HomePageBox{
+        width: 45%;
+    }
+    .TAHead{
+        margin-top: 5%;
+    }
+}

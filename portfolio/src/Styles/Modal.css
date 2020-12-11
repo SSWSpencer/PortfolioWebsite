@@ -1,0 +1,106 @@
+@keyframes modal-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.modal {
+    font-size: 1.6rem;
+    width: 55%;
+    margin: 0 auto;
+    background: rgb(140, 211, 255, 0.8);
+    padding: 2%;
+    border-radius: 20px;
+    border: 2px solid #03045E;
+    animation-name: modal-in;
+    animation-duration: 0.5s;
+  }
+  .modal .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 5px;
+  }
+  .modal > .content {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+
+  .button1{
+      border: 0;
+      cursor: pointer;
+      text-decoration: underline;
+      background: none;
+      font-size: 0.8rem;
+  }
+
+  .button2{
+    border: 2px solid #1A75D8;
+    border-radius: 10px;
+    padding: 1% 2%;
+    background: #01F6FE;
+    color: #03045E;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    transition: 1s;
+  }
+
+  .button2:hover{
+    border: 2px solid #03045E;
+    background: #1A75D8
+  }
+
+  @media(min-width: 2560px){
+    .button1{
+      font-size: 1rem;
+    }
+    .button2{
+      font-size: 1.56rem;
+    }
+    .modal{
+      font-size: 2.1rem;
+    }
+    .modal .header{
+      font-size: 3.25rem;
+    }
+}
+
+@media(min-width: 3840px){
+    .button1{
+      font-size: 1.6rem;
+    }
+    .button2{
+      font-size: 2.4rem;
+    }
+    .modal{
+      font-size: 3.2rem;
+    }
+    .modal .header{
+      font-size: 5rem;
+    }
+}
+
+@media(max-width: 1024px){
+  .button1{
+    display: none;
+  }
+}

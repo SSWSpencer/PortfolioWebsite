@@ -1,0 +1,189 @@
+.AboutTopBackground{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-image: url("../Images/Content-Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.AboutPageTop{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: white;
+    letter-spacing: 0.05rem;
+    font-weight: bold;   
+}
+
+.AboutPageTopText h1{
+    margin-bottom: 8%;
+    text-align: left;
+}
+
+.AboutPageTopText{
+    text-align: center;
+}
+
+.AboutPageTop img{
+    border-radius: 50%;
+    width: 35%;
+}
+
+.AboutPageTopText a{
+    border: 2px solid #1A75D8;
+    border-radius: 10px;
+    padding: 3.5% 5%;
+    background: #01F6FE;
+    color: #03045E;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    transition: 1s;
+    
+}
+
+.AboutPageTopText a:hover{
+    border: 2px solid #03045E;
+    background: #1A75D8
+}
+
+.AboutList{
+    text-align: center;
+}
+
+.AboutListTop{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+}
+
+.AboutBox img {
+    width: 40%;
+    margin-bottom: 2%;
+}
+
+.AboutBox{
+    width: 20%;
+}
+
+.BigAboutBox img{
+    width: 10%;
+    margin-bottom: 0.5%;
+}
+
+.BigAboutBox{
+    width: 80%;
+    margin: 2% auto;
+    margin-bottom: 4%;
+}
+
+.AboutBox p, .BigAboutBox p{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.AboutBox h3{
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    margin-bottom: 2%;
+}
+.BigAboutBox h3{
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1%;
+}
+
+hr{
+    width: 80%;
+}
+
+@media(min-width: 2560px){
+    .AboutTopBackground{
+        height: 800px;
+    }
+    .AboutPageTopText a{
+        font-size: 1.6rem;
+    }
+    .AboutBox p, .BigAboutBox p{
+        font-size: 1.46rem;
+        line-height: 2rem;
+    }
+}
+
+@media(min-width: 3840px){
+    .AboutTopBackground{
+        height: 1200px;
+    }
+    .AboutPageTopText a{
+        font-size: 2.4rem;
+    }
+    .AboutBox p, .BigAboutBox p{
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+}
+
+@media(max-width: 1024px){
+    .AboutTopBackground{
+        position: relative;
+        height: 450px;
+        background-image: linear-gradient(to right, rgb(33, 128, 222), rgb(34,247,254));
+    }
+    .AboutPageTop h1{
+        text-align: center;
+    }
+    .AboutPageTop img{
+        width: 45%;
+    }
+    .AboutListTop{
+        flex-direction: column;
+    }
+    .AboutBox{
+        width: 80%;
+        margin: 2% auto;
+        border-top: 1px solid grey;
+        padding-top: 2%;
+    }
+    .AboutBox img{
+        width: 15%;
+    }
+
+    .BigAboutBox{
+        width: 80%;
+    }
+    .BigAboutBox img{
+        width: 15%;
+    }
+
+    #firstAboutBox{
+        padding-top: 0;
+        border-top: 0;
+    }
+}
+
+@media(max-width: 700px){
+    .AboutTopBackground{
+        height: 300px;
+    }
+    .AboutPageTop{
+        flex-direction: column-reverse;
+    }
+    .AboutPageTop h1{
+        text-align: center;
+    }
+    .AboutPageTop a{
+        font-size: 0.8rem;
+    }
+    .AboutPageTop img{
+        width: 45%;
+    }
+}
