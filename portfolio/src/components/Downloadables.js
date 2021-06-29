@@ -6,6 +6,9 @@ import Modal from "./Modal"
 import VSTKeyPhoto from "./Pictures/VSTKeyPhoto.jpg"
 import VSTKeyProjectPic from "./Pictures/VSTKeyProjectPic.png"
 
+import LifeLimitPhoto from "./Pictures/LifeLimitPhoto.jpg"
+import LifeLimitProjectPic from "./Pictures/LifeLimitProjectPic.png"
+
 import SaltProjectPic from "./Pictures/SaltProjectPic.png"
 
 const Downloadables = () => {
@@ -21,7 +24,7 @@ const Downloadables = () => {
 
     const modalText = {
         title: "Downloads",
-        topText: "This is a featured list of some of my Python Scripts. The top part of the page is a featured carousel, and the bottom is a full list of everything that is available to be downloaded.",
+        topText: "This is a featured list of some of my projects I've worked on outside of the web development realmM. The top part of the page is a featured carousel, and the bottom is a full list of everything that is available to be downloaded.",
         bottomText: "Each project has a link to the GitHub repository, as well as a mediafire link to the actual download link. I do have plans to migrate this entire page to its own site at a later date to make the more-useful scripts easier to find by the public, however until I've got a good list built up they will stay here!"
     }
 
@@ -35,6 +38,15 @@ const Downloadables = () => {
             photo: VSTKeyPhoto,
             smallPhoto: VSTKeyProjectPic,
         },
+        {
+            title: "LifeLimit (Minecraft Java Edition Plugin)",
+            download: "https://www.mediafire.com/file/s6apzd6n3pn610a/LifeLimit.jar/file",
+            github: "https://github.com/SSWSpencer/LifeLimitMC",
+            description: "This is a basic plugin for Minecraft Java Edition Servers that run the Spigot API. This plugin sets a life cap for players, to encourage a more strategic approach to gameplay and interaction with other players around the server.",
+            myWork: "I developed this plugin using the Spigot API for Minecraft. This was the first project I've made in Java since I started learning Web Development, and I made it to re-familiarize myself with the language as a whole.",
+            photo: LifeLimitPhoto,
+            smallPhoto: LifeLimitProjectPic
+        }
         
     ]
 
